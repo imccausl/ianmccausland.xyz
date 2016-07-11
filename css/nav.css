@@ -167,7 +167,7 @@
 	border-left: 1px solid rgba(208,208,208,1);
 }
 
-#nav-toggle.active span {
+#nav-toggle.active {
 	left: 160px;
 }
 
