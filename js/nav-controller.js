@@ -6,7 +6,8 @@
 var navMenuToggle = document.getElementById("nav-toggle");
 var navMenuItems = document.querySelectorAll("li.nav-item");
 			
-navMenuToggle.addEventListener("click", function() {
+navMenuToggle.addEventListener("click", function(e) {
+	e.preventDefault();
 	navMenuToggle.classList.toggle("active");
 });
 			
@@ -15,7 +16,8 @@ navMenuToggle.addEventListener("click", function() {
 			
 if (navMenuItems.length > 0) {
 	for (var i=0; i<navMenuItems.length; i++) {
-		navMenuItems[i].addEventListener("click", function() {
+		navMenuItems[i].addEventListener("click", function(e) {
+		e.preventDefault();
 		navMenuToggle.classList.toggle("active");
 		});
 	}
