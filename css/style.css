@@ -82,12 +82,10 @@
 	}
 }
 
-/* end hack for stupid safari bug */
-
 /* responsive font resizing for header */
 @media screen and (min-width: 1px) {	
 	.circle-content h1 {
-		font-size: 1.1em;
+		font-size: 1em;
 	}
 }
 
@@ -179,7 +177,18 @@
 	.circle-content h1 {
 		font-size: 3.4em;
 	}
+
+@media screen and (min-width: 1366px) {
+	.circle-content h1 {
+		font-size: 3.7em;
+	}
+	
+@media screen and (min-width: 1920px) {
+	.circle-content h1 {
+		font-size: 5.4em;
+	}	
 }
+
 html {
 	box-sizing: border-box;
 }
@@ -319,7 +328,7 @@ section h3 {
 	display: table-cell;
 	padding: 1em;
 	
-	vertical align: center;
+	vertical-align: center;
 
 }
 
@@ -342,8 +351,8 @@ section h3 {
 
 .circle:after {
 	display: block;
-	padding-bottom: 40%;
-	width: 40%;
+	padding-bottom: 80vh;
+	width: 80vh;
 	height: 0;
 	border-radius: 50%;
 	
