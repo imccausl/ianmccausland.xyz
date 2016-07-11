@@ -1,0 +1,459 @@
+@media screen and (min-width: 320px) and (max-width: 375px) {
+	.flexbox {
+		flex-flow: column wrap;
+	}
+	
+	.flex-content {
+		width: 100%;
+	}
+	
+	#top {
+		
+		background-attachment: scroll;
+	}
+}
+
+@media screen and (min-width: 736px) and (max-width: 850px) {
+	.flexbox {
+		flex-flow: column wrap;
+	}
+	
+	.flex-content {
+		width: 100%;
+	}
+	
+	#top {
+		
+		background-attachment: scroll;
+	}
+}
+
+@media screen and (min-width: 375px) and (max-width: 415px) {
+	.flexbox {
+		flex-flow: column wrap;
+	}
+	
+	.flex-content {
+		width: 90%;
+	}
+	
+	#top {
+		
+		background-attachment: scroll;
+	}
+}
+
+@media screen and (min-width: 415px) and (max-width:736px) {
+	.flexbox {
+		flex-flow: column wrap;
+	}
+	
+	.flex-content {
+		width: 90%;
+	}
+	
+	#top {
+		
+		background-attachment: scroll;
+	}
+}
+
+/* stupid iOS safari background:cover/background-attachment: fixed bug */
+
+@media screen and (min-width:850px) and handheld and (orientation: landscape) {
+	#top {
+		
+		background-attachment: scroll;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	.flexbox {
+		flex-flow: row wrap;
+	}
+	
+	.flex-content {
+		width: 18vw;
+	}
+	
+	#top {
+		
+		background-attachment: fixed;
+	}
+}
+
+/* end hack for stupid safari bug */
+
+/* responsive font resizing for header */
+@media screen and (min-width: 1px) {	
+	.circle-content h1 {
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (min-width: 515px) {	
+	.circle-content h1 {
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width: 553px) {	
+	.circle-content h1 {
+		font-size: 1.3em;
+	}
+}
+
+@media screen and (min-width: 576px) {	
+	.circle-content h1 {
+		font-size: 1.4em;
+	}
+}
+
+@media screen and (min-width: 616px) {	
+	.circle-content h1 {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (min-width: 656px) {	
+	.circle-content h1 {
+		font-size: 1.6em;
+	}
+}
+
+@media screen and (min-width: 674px) {	
+	.circle-content h1 {
+		font-size: 1.7em;
+	}
+}
+
+@media screen and (min-width: 716px) {	
+	.circle-content h1 {
+		font-size: 1.8em;
+	}
+}
+
+@media screen and (min-width: 781px) {	
+	.circle-content h1 {
+		font-size: 2em;
+	}
+}
+
+@media screen and (min-width: 815px) {	
+	.circle-content h1 {
+		font-size: 2.1em;
+	}
+}
+
+@media screen and (min-width: 874px) {	
+	.circle-content h1 {
+		font-size: 2.3em;
+	}
+}
+
+@media screen and (min-width: 935px) {	
+	.circle-content h1 {
+		font-size: 2.5em;
+	}
+}
+
+@media screen and (min-width: 1003px) {
+	.circle-content h1 {
+		font-size: 2.7em;
+	}
+}
+
+@media screen and (min-width: 1057px) {
+	.circle-content h1 {
+		font-size: 2.9em;
+	}
+}
+
+@media screen and (min-width: 1130px) {
+	.circle-content h1 {
+		font-size: 3.1em;
+	}
+}
+
+@media screen and (min-width: 1234px) {
+	.circle-content h1 {
+		font-size: 3.4em;
+	}
+}
+html {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	
+	top: 0;
+	left: 0;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	
+	font-family: "Helvetica Neue", "Arial", sans-serif;
+	
+	overflow-x: hidden;
+}
+
+header, div, h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4 {
+
+	font-family: "geomanistextralight","Helvetica Neue", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	
+	text-align: left;
+}
+
+h3 {
+	flex-grow: 2;
+	
+}
+
+p {
+	font-family: "Cairo", "Helvetica Neue", sans-serif;
+	font-weight: 300;
+}
+
+p, figcaption {
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+figcaption {
+	font-family: "Cairo", "Helvetica", "Arial", san-serif;
+	font-weight: 300;
+}
+
+figure {
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+section {
+	position: relative;
+	
+	width: 100%;
+	height: auto;
+	
+	padding: 10px;
+	
+	z-index: 5;
+}
+
+section:nth-of-type(odd) {
+	background: rgba(248,248,248,0.9);
+}
+
+section:nth-of-type(even) {
+	background: rgba(232,232,232,0.9);
+}
+
+section h2 {
+	position: -webkit-sticky;
+	position: sticky;
+	
+	top: 0;
+	margin: 0; 
+	
+	font-size: 2em;
+	color: midnightblue;
+	
+	padding: 15px 0 15px 37px;
+	
+	background: inherit;
+}
+
+section h3 {
+	padding: 0 5px;
+}
+
+.flexbox {
+	display: flex;
+	
+	align-items: baseline;
+	justify-content: center;
+	
+	padding: 30px 35px;
+}
+
+.flex-content {
+	flex-grow: 1;
+	flex-shrink: 1;
+	
+	flex-basis: auto;
+	
+	padding: 5px 5px;
+	
+	text-align: center;
+	/* width attributes in @media query */
+	
+	background: inherit;
+	
+}
+
+/* style modules */
+.content-wrapper { /* content-wrapper controls the margins on the main site 
+						  so that no content overlaps the nav-toggle */
+	position: relative;
+	/* left: 60px; */
+	margin: 0 auto;
+	top: 0;
+	left: 0px;
+	
+	width: 100%;
+
+}
+
+.circle-content {
+	display: table-cell;
+	padding: 1em;
+	
+	vertical align: center;
+
+}
+
+.circle-content h1 {
+	font-family: "kepler", serif;
+	color: white;
+	
+	text-align: center;
+}
+
+.circle {	
+	position: relative;
+	display: block;
+	
+	background-color: transparent;
+	text-align: center;
+	
+	top: 12%;
+}
+
+.circle:after {
+	display: block;
+	padding-bottom: 40%;
+	width: 40%;
+	height: 0;
+	border-radius: 50%;
+	
+	background: rgba(0,0,0,0.6);
+	border: 1px solid rgba(232,232,232,0.7);
+	content: "";
+	
+	margin: 0 auto;
+}
+
+.circle-inner {
+	position: absolute;
+
+	top: 18%;
+	bottom: 0;
+	left: 0;
+	
+	width: 100%;
+	height: 100%;
+}
+
+.circle-container {
+	margin: 0 auto;
+	display: table;
+	
+	width: 25%;
+	height: 50%;
+}
+
+#top {
+	position: relative;
+	
+	opacity: 0.9;
+	height: 100%;
+	width: 100%;
+	
+	top: 0;
+	left: 0;
+	
+	background-image: url("../img/splash.jpg");
+	background-size: cover;
+	
+	/*background-attachment moved to media queries to fix iOS safari fixed/cover bug */
+	
+	background-position: top left;
+	background-repeat: no-repeat;
+	
+	border-bottom: 1px solid rgba(208,208,208,1);
+}
+
+.flexbox p {
+	margin: 10px 5px;
+	text-align: left;
+}
+
+/* yes, a hack to make all the svgs display at approximately the same size. */
+
+.css-logo {
+	width: 200px;
+	height: 200px;
+	
+	/* margin: 5px 0px 5px 0px; */
+}
+
+.html-logo {
+	width: 197px;
+	height: 197px;
+	
+	/* margin: 5px 0px 5px 0px; */
+}
+
+.js-logo {
+	width: 155px;
+	height: auto;
+	
+	margin-bottom: -8px;
+}
+
+.rwd-logo {
+	width: 220px;
+	height: auto;
+	
+	margin-bottom: -44px;
+}
+
+.bootstrap-logo {
+	width: 120px;
+	height: auto;
+}
+
+.commodore-logo {
+	width: 170px;
+	height: 170px;
+}
+
+.edu-logo {
+	width: 150px;
+	height: 150px;
+}
+
+#downarrow {
+	position: absolute;
+	display: block;
+	
+	width: 50px;
+	height: 50px;
+	opacity: 0.8;
+	
+	bottom: 0;
+	left: 0;
+	
+	z-index: 10;
+}

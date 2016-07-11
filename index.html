@@ -1,0 +1,138 @@
+<!doctype HTML>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Ian McCausland is..?</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="https://fonts.googleapis.com/css?family=Cairo:200,300,600|Permanent+Marker" rel="stylesheet">
+		
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+		
+		<script src="js/jquery/jquery-3.0.0.min.js"></script>
+		<script src='js/jquery/plugins/jquery.scrollTo.min.js'></script>
+		
+		<!-- 	a nice, dirty hack to change the hamburger menu color when you scroll out of the
+				header because it uses pseudo elements and they are not represented in the DOM -->
+				
+		<style id="nav-color"></style>
+		
+	</head>
+	
+	<body>
+		<nav>
+			<ul class="nav">
+				<a href="#top"><li class="nav-item">HOME</li></a>
+				<a href="#skills"><li class="nav-item">SKILLS</li></a>
+				<a href="#edu"><li class="nav-item">EDUCATION</li></a>
+				<a href="#story"><li class="nav-item">STORY</li></a>
+				<a href="#portfolio"><li class="nav-item">PORTFOLIO</li></a>
+				<a href="#cv"><li class="nav-item">CV</li></a>
+				<a href="#blog"><li class="nav-item">BLOG</li></a>
+			</ul>
+		</nav>
+		
+		
+		<a id="nav-toggle" href="#"><span></span></a>
+		
+		<div class="site-wrap">
+			
+				<header id="top">
+					<div class="circle">
+						<div class="circle-inner">
+							<div class="circle-container">
+								<div class="circle-content"><h1>Ian McCausland is a researcher, writer, and web developer.</h1></div>
+							</div>
+						</div>
+					</div>
+					<a href="#skills"><img src="img/downarrow.svg" alt="scroll down for more" id="downarrow" /></a>
+				</header>
+			
+			<!-- detect when to change the hamburger menu to black so that it remains visible -->
+			<div id="nav-anchor"></div>
+			
+			<!--	two wrappers? are you kidding me? No, I'm very serious. This guy keeps the content
+					from overflowing the hamburger menu -->
+			<div class="content-wrapper">	
+			
+				<section id="skills" class="box-style">
+					<h2>Skills</h2>
+					<div class="flexbox">
+						
+							<figure class="flex-content">
+								<img class = "html-logo" src="img/html5.svg" />
+								<figcaption>I write complaint, accessible HTML5</figcaption>
+							</figure>
+						
+						
+							<figure class="flex-content">
+								<img class = "css-logo" src="img/css3.svg" />
+								<figcaption>I write modular, scalable CSS3</figcaption>
+							</figure>
+						
+						
+							<figure class="flex-content">
+								<img class = "js-logo" src="img/js.png" />
+								<figcaption>I know Javascript and jQuery</figcaption>
+							</figure>
+							
+							<div>
+								<h3>Summary</h3>
+								<p>Lorem ipsum dolor sit amet, in ipsum harum recusabo nec, lobortis mandamus euripidis sea et. Eum vidit interesset et, te vidit simul sea. Cu euismod delectus duo, sed numquam eruditi phaedrum no. Vis oratio repudiare iracundia eu, id sed rationibus temporibus consequuntur. Qui mucius delectus te, expetenda maluisset pertinacia mei ea. Ex doctus invenire electram has.</p>
+							</div>
+					</div>
+				</section>
+				
+				<section id="edu" class="box-style">
+					<h2>Education.</h2>
+						<div class="flexbox">
+							
+							<figure class="flex-content">
+								<img class="edu-logo" src="img/uofc.png" />
+								<figcaption>I have a Bachelor of Arts in English (2007) from the University of Calgary (Calgary, Alberta).</figcaption>
+							</figure>
+							
+							<figure class="flex-content">
+								<img class="edu-logo" src="img/western.png" />
+								<figcaption>and a Master of Arts in (Social) Theory and (Cultural) Criticism (2011) from Western University (London, Ontario).</figcaption>
+							</figure>
+							
+							<div>
+								<h3>Summary</h3>
+								<p>Lorem ipsum dolor sit amet, in ipsum harum recusabo nec, lobortis mandamus euripidis sea et. Eum vidit interesset et, te vidit simul sea. Cu euismod delectus duo, sed numquam eruditi phaedrum no. Vis oratio repudiare iracundia eu, id sed rationibus temporibus consequuntur. Qui mucius delectus te, expetenda maluisset pertinacia mei ea. Ex doctus invenire electram has.</p>
+							</div>
+						</div>
+				</section>
+				
+				<section id="story" class="box-style">
+					<h2>Story</h2>
+					<div class="flexbox">
+						<p>In my past life I was a Ph.D. student in the Humanities Department at York University. I led a weekly tutorial for six years, introducing students to traditional and popular culture, for a course, aptly, if not stoically, named, Introduction to Traditional and Popular Culture. We looked at ways in which groups of human beings — i.e. cultures — understood themselves and their surroundings through shared narrative practices. That is my more general term for this fundamental fact about human beings: they tell stories. Whereas today we might binge-watch some Netflix, historically a group might gather around the storyteller, then later buy a newspaper or attend the theatre, and still later gather around the radio in the living-room. You get the idea. But the point is, this ineluctable human impulse to make meaning doesn’t begin and end with storytelling as it might be popularly concieved.</p>
+						<p>As a matter of fact, I bet you have a certain idea in your head right now about what storytelling entails: it’s probably fictional, it’s probably designed primarily for entertainment, and you probably don’t take it very seriously.</p>
+						<p>But what if I told you that I used this (admittedly) cumbersome phrase, <strong>shared narrative practices</strong> because this idea extends far beyond <strong>storytelling</strong> as we might spontaneously understand it? Quantum theory is a <strong>shared narrative practice.</strong> Cognitive science? That’s a <strong>shared narrative practice</strong>, too.  API documentation for iOS 10? You get the idea.</p>
+					</div>
+				</section>
+				
+				<section id="portfolio" class="box-style">
+					<h2>Portfolio</h2>
+				</section>
+				
+				<section id="cv" class="box-style">
+					<h2>Curriculum Vitae</h2>
+				</section>
+				
+				<section id="blog" class="box-style">
+					<h2>Modern Mythologies</h2>
+				</section>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/nav-controller.js"></script>
+		<script type="text/javascript" src="js/jquery.scroll-controller.js"></script>
+		
+	</body>
+</html>

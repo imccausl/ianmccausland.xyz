@@ -1,0 +1,163 @@
+/*  nav.css
+	Styles controlling the slide-out navigation panel */
+
+/*  After much deliberation, the most responsive solution to navigation for this site.
+	Menu-based navigation that is always scaled to whatever viewport without any fuss.
+	(And believe me, I fussed a lot about navigation here!)
+	
+	Thanks to Austin Wulf at SitePoint for the tutorial 
+	https://www.sitepoint.com/pure-css-off-screen-navigation-menu/ 
+	
+	Also added a nice animated hamburger for better UX courtesy of some reading
+	I was doing about animated hamburger icons: http://elijahmanor.com/css-animated-hamburger-icon/
+	Thanks, Elijah Manor for the informative writeup. */
+
+.site-wrap { /* this allows the main site to slide away to reveal the nav menu */
+	position: relative;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	
+	-webkit-overflow-scrolling: touch;
+	
+	width: 100%;
+	height: 100%;
+	
+	background-color: #FFFAFA;
+	
+	top: 0;
+	bottom: 100%;
+	left: 0;
+	
+	z-index: 1;
+}
+
+.nav {
+	position: fixed;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	
+	list-style: none;
+	background: rgba(232,232,232,1);
+	
+	width: 100%;
+	height: 100%;
+	
+	/* top: -17px;
+	right: 0;
+	bottom: 0px;
+	left: -43px; */
+	
+	top: -17px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	
+	
+	
+	z-index: 0;
+}
+
+#nav-toggle span {
+	position: relative;
+	
+	top: 32px;
+	left: 8px;
+
+	z-index: 5;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	cursor: pointer;
+	border-radius: 1px;
+	height: 5px;
+	width: 35px;
+	background: white;
+	
+	position: fixed;
+	
+	display: block;
+	content: "";
+}
+
+#nav-toggle span:before {
+	top: 22px;
+}
+
+#nav-toggle span:after {
+	top: 42px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	transition: all 0.3s ease-out;
+}
+
+#nav-toggle.active span {
+	background-color: transparent;
+}
+
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+	top: 32px;
+}
+
+#nav-toggle.active span:before {
+	transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+	transform: rotate(-45deg);
+}
+
+#nav-toggle.active span {
+	left: 164px;
+}
+
+#nav-toggle.active ~ .site-wrap {
+	left: 160px;
+	border-left: 1px solid rgba(208,208,208,1);
+}
+
+#nav-toggle.active span, .site-wrap {
+	transition: left 0.3s ease-out;
+}
+
+.nav-item {
+	position: relative;
+	display: block;
+	
+	font-family: "geomanistregular", "Helvetica Neue", sans-serif;
+	font-size: 1em;
+	text-align: right;
+	
+	width: 120px;
+	height: auto;
+	left: -30px;
+	top: 10px;
+	margin: 0;
+	padding: 5px 10px 5px 10px;
+	
+	opacity: 0.7;
+}
+
+.nav a {
+	text-decoration: none;
+	color: black;
+}
+
+.nav-item:hover {
+	background: black;
+	opacity: 0.5;
+	
+	transition: background 0.2s ease-in;
+}
+
+.nav a:hover {
+	color: white;
+	transition: color 0.2s ease-in;
+}
+
+.nav-active {
+	color: white;
+	background: black;
+	
+	transition: all 0.5s ease-in;
+}
