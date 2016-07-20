@@ -10,9 +10,9 @@ $(document).ready(function(){
         var window_top = $(window).scrollTop() + 12; // the "12" should equal the margin-top value for nav.stick
         var div_top = $('#nav-anchor').offset().top;
             if (window_top > div_top) {
-                $('#nav-color').html('<style>#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after{background:black;}</style>');
+                $('#nav-color').html('<style>#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after{background-color:black;}</style>');
             } else {
-                $('#nav-color').html('<style>#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after{background:white;}</style>');
+                $('#nav-color').html('<style>#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after{background-color:white;}</style>');
             }
     });
     

@@ -74,8 +74,7 @@
 	border: none;
 	
 	cursor: pointer;
-	transition: background 0.3s;
-	
+		
 	z-index: 5;
 }
 
@@ -120,11 +119,11 @@
 }
 
 .c-hamburger--htx {
-	background-color: transparent;
+	background: transparent;
 }
 
-#nav-toggle span {
-	transition: background 0s 0.3s, left 0.3s ease-out;
+#nav-toggle,  #nav-toggle span {
+	transition: left 0.3s ease-out
 }
 
 #nav-toggle span::before, #nav-toggle span::after {

@@ -7,14 +7,17 @@
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link href="https://fonts.googleapis.com/css?family=Cairo:200,300,600|Permanent+Marker" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cairo:200,300,600" rel="stylesheet">
 		
 		<link rel="stylesheet" href="css/fonts.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/nav.css" />
 		
 		<script src="js/jquery/jquery-3.0.0.min.js"></script>
-		<script src='js/jquery/plugins/jquery.scrollTo.min.js'></script>
+		<script src="js/jquery/plugins/jquery.scrollTo.min.js"></script>
+		<script src="js/lib/jquery.inview.min.js.html"></script>
+		
+		<script src="js/page-elements-display-controller.js"></script>
 		
 		<!-- 	a nice, dirty hack to change the hamburger menu color when you scroll out of the
 				header because it uses pseudo elements and they are not represented in the DOM -->
@@ -49,7 +52,7 @@
 							</div>
 						</div>
 					</div>
-					<a href="#skills"><img src="img/downarrow.svg" alt="scroll down for more" id="downarrow" /></a>
+					<a href="#skills"><img src="img/downarrow.svg" alt="scroll down for more" id="scroll-indicator" /></a>
 				</header>
 			
 			<!-- detect when to change the hamburger menu to black so that it remains visible -->
@@ -61,6 +64,7 @@
 			
 				<section id="skills" class="box-style">
 					<h2>Skills</h2>
+					
 					<div class="flexbox">
 						
 							<figure class="flex-content">
@@ -82,13 +86,25 @@
 							
 							<div>
 								<h3>Summary</h3>
-								<p>Lorem ipsum dolor sit amet, in ipsum harum recusabo nec, lobortis mandamus euripidis sea et. Eum vidit interesset et, te vidit simul sea. Cu euismod delectus duo, sed numquam eruditi phaedrum no. Vis oratio repudiare iracundia eu, id sed rationibus temporibus consequuntur. Qui mucius delectus te, expetenda maluisset pertinacia mei ea. Ex doctus invenire electram has.</p>
+								<p>I've been interested in developing for the web since before even tables were used to lay out content. When <strike>frames</strike> blink <strike>were</strike> was cool, I was guilty of overusing <strike>them</strike> it. I even made the odd web interface in a popup window. But don't hold that against me. It was how things were done in 2000.</p>
+
+<p>Today, I'm obsessed with <strong>CSS3</strong>, <strong>HTML5</strong>, <strong>JavaScript</strong>, and the various awesome JavaScript frameworks that turn the web pages of old into fully responsive web <em>applications</em>.</p> 
+
+<p>I understand <strong>Ajax</strong>, <strong>JSON</strong>, <strong>XML</strong> and, and, well, speaking of asynchronous  I am currently learning <strong>Angular</strong>. I know that a <strong>MEAN</strong> stack isn't a large and inexplicable pile of bullies, that <strong>REST</strong>ful APIs aren't an excuse for sleeping on the job, and that these ridiculous jokes are probably not going to get me anywhere (but I'm crossing my fingers anyway). I am highly motivated and serious about professional development. I learn fast and find it exciting to explore new frameworks and languages. I keep up not only with best practices and the nuances of writing scalable and modular code, but I am also interested in the key theoretical aspects of development, such as programming methodology, problem solving, and information architecture. In other words, I may not <em>have</em> a computer science degree, but I use my education and experience to learn to <em>think</em> like a computer scientist. In this context, you might be interested in <a href="#story">how my research and education as a graduate student informed my entry into web development</a>.</p>
+
+<p>I can work with SASS and LESS and have been comfortable with the unix command line since MacOS X Developer Preview 1 (I like my Terminal.app to have a transparent background, in case you're wondering... um, but I've also been using a Mac for a real long time).</p>
+
+<p>Oh did I also mention that I am learning unit testing with karma and end-to-end testing with protractor? I guess I didn't. But make no mistake: <em>I may not have 3,4,5+ years of web development experience under my belt just yet, but I'm serious about learning and implementing the technologies at its core.</em></p>
+
+<p>I'm in love with Coda 2 and BBEdit, on good terms with (if not totally enthusiastic about) NetBeans, and interested in one day finding a web development IDE I simply can't live without.</p>
 							</div>
 					</div>
+					
 				</section>
 				
 				<section id="edu" class="box-style">
-					<h2>Education.</h2>
+					<h2>Education</h2>
+						
 						<div class="flexbox">
 							
 							<figure class="flex-content">
@@ -103,9 +119,12 @@
 							
 							<div>
 								<h3>Summary</h3>
-								<p>Lorem ipsum dolor sit amet, in ipsum harum recusabo nec, lobortis mandamus euripidis sea et. Eum vidit interesset et, te vidit simul sea. Cu euismod delectus duo, sed numquam eruditi phaedrum no. Vis oratio repudiare iracundia eu, id sed rationibus temporibus consequuntur. Qui mucius delectus te, expetenda maluisset pertinacia mei ea. Ex doctus invenire electram has.</p>
+								<p>My background is in textual and cultural analysis and criticism, which I applied in my graduate studies to how language structures our experience and turns it into a meaningful exchange with others and the world around us. Broadly speaking, though, my education was an intensive study of critical thinking and problem solving. I break down ideas into their elements and consider how they operate together to create a cohesive, meaningful whole, a skill that I have since become profoundly interested in applying to UI/UX design and web development.</p>
+
+<p>Additionally, I spent <a href="#story">8 years as a TA</a>, using and developing these skills in a classroom environment in which we discussed how meaning operates at the level of various media, popular culture, and within the context of traditional (i.e. non-literate) cultures, before the advent of mass media.</p>
 							</div>
 						</div>
+						
 				</section>
 				
 				<section id="story" class="box-style">
@@ -115,6 +134,7 @@
 						<p>As a matter of fact, I bet you have a certain idea in your head right now about what storytelling entails: it’s probably fictional, it’s probably designed primarily for entertainment, and you probably don’t take it very seriously.</p>
 						<p>But what if I told you that I used this (admittedly) cumbersome phrase, <strong>shared narrative practices</strong> because this idea extends far beyond <strong>storytelling</strong> as we might spontaneously understand it? Quantum theory is a <strong>shared narrative practice.</strong> Cognitive science? That’s a <strong>shared narrative practice</strong>, too.  API documentation for iOS 10? You get the idea.</p>
 					</div>
+				
 				</section>
 				
 				<section id="portfolio" class="box-style">
@@ -133,6 +153,7 @@
 		
 		<script type="text/javascript" src="js/nav-controller.js"></script>
 		<script type="text/javascript" src="js/jquery.scroll-controller.js"></script>
+		<script type="text/javascript" src="js/jquery-scroll-indicate-controller.js"></script>
 		
 	</body>
 </html>
