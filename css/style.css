@@ -552,7 +552,7 @@ section h3 {
 	top: 0;
 	left: 0;
 	
-	background-image: url("../img/splash.jpg");
+	background-image: url("../img/interface/splash.jpg");
 	background-size: cover;
 	
 	/*background-attachment moved to media queries to fix iOS safari fixed/cover bug */
