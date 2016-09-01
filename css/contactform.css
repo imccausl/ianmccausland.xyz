@@ -1,0 +1,71 @@
+input, textarea, #submit-button {
+	display: block;
+	font-family: "Cairo", "Helvetica Neue", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.form-wrapper {
+	position: relative;
+	background-color: rgba(72,72,72,0.4);
+	padding: 20px 20px 30px 20px;
+	bottom: 0;
+	
+	border-radius: 4px;
+	width: 70%;
+	height: auto;
+	
+	margin: 0 auto;
+}
+
+textarea {
+	height: 100px;
+	resize: vertical;
+}
+
+input {
+	height: 50px;
+}
+
+.feedback-input {
+	color: #3c3c3c;
+	border-radius: 0;
+	line-height: 1;
+	background-color: #fbfbfb;
+	padding: 16px 13px 13px 54px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+	
+	width: 100%;
+}
+
+.feedback-input:focus {
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+	background-color: white;
+}
+
+#name, #email, #comment, #name:focus, #email:focus {
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name {
+	background-image: url('../img/form/name.svg');
+}
+
+#email {
+	background-image: url('../img/form/email.svg');
+}
+
+#comment {
+	background-image: url('../img/form/comment.svg');
+}
