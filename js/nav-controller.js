@@ -17,7 +17,7 @@ navMenuToggle.addEventListener("click", function(e) {
 if (navMenuItems.length > 0) {
 	for (var i=0; i<navMenuItems.length; i++) {
 		navMenuItems[i].addEventListener("click", function(e) {
-		e.preventDefault();
+		
 		navMenuToggle.classList.toggle("active");
 		});
 	}

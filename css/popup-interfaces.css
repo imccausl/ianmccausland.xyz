@@ -1,0 +1,48 @@
+.popup-background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	
+	top: 0;
+	left: 0;
+	
+	background-color: rgba(0, 0, 0, 0.47);
+	
+	z-index: 6;
+	display: none;
+}
+
+.viewer-img {
+	position: relative;
+	
+	display: block;
+	top: 5%;
+
+	height: auto;
+	width: 85%;
+	
+	margin: auto auto;
+	
+	left: 0;
+	right: 0;
+}
+
+.toggle-img-popup {
+	position: relative;
+	display: inline-block;
+	
+	padding: 0;
+	margin: 0 2% 2% 0;
+	
+	width: 60%;
+	height: 60%;
+		
+	background: transparent;
+	border: none;
+}
+
+.toggle-img-popup:hover {
+	opacity: 0.6;
+}
+
+
