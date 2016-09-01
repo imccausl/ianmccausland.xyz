@@ -1,8 +1,15 @@
 
+<<<<<<< HEAD
 .DS_Store
 
 .vscode/ftp-sync.json
 
+=======
+.vscode/ftp-sync.json
+
+.DS_Store
+
+>>>>>>> fix-responsive-circle
 img/form/comment.svg
 
 img/form/email.svg

@@ -58,7 +58,8 @@
 	}
 }
 
-/* stupid iOS safari background:cover/background-attachment: fixed bug */
+/* stupid iOS safari background:cover/background-attachment bug -- this doesn't even solve the issue. 
+   Yay. */
 
 @media screen and (min-width:850px) and handheld and (orientation: landscape) {
 	#top {
@@ -82,106 +83,262 @@
 	}
 }
 
-/* end hack for stupid safari bug */
-
-/* responsive font resizing for header */
+/* ALL THE MEDIA QUERIES!
+ * Yes, responsive font/circle resizing and positioning for header 
+ * A truly glorious, tedious, pain-in-the-ass. 
+ * If anyone has better ideas about how to do this with less code, 
+ * Please contact me! 
+ ******************************************************************/
+ 
 @media screen and (min-width: 1px) {	
 	.circle-content h1 {
-		font-size: 1.1em;
+		font-size: 2.5em;
+	}
+	
+	.circle:after {
+		padding-bottom: 86%;
+		width: 86%;
+	}
+	
+	.circle-container {
+		width: 80%; /* 	fix the super tiny margins for the text inside the circle on tiny displays like 						iPhone 4... for that 1 person that still uses an iPhone 4? Meh, it also affects
+						the text on iPhone 5-6s Plus so all is not lost. */
 	}
 }
 
 @media screen and (min-width: 515px) {	
 	.circle-content h1 {
-		font-size: 1.2em;
+		font-size: 2.3em;
+	}
+	
+	.circle:after {
+		padding-bottom: 85%;
+		width: 85%;
 	}
 }
 
 @media screen and (min-width: 553px) {	
 	.circle-content h1 {
-		font-size: 1.3em;
+		font-size: 2.3em;
+	}
+	
+	.circle:after {
+		padding-bottom: 76%;
+		width: 76%;
 	}
 }
 
 @media screen and (min-width: 576px) {	
 	.circle-content h1 {
-		font-size: 1.4em;
+		font-size: 2.5em;
+	}
+	
+	.circle:after {
+		padding-bottom: 80%;
+		width: 80%;
 	}
 }
 
 @media screen and (min-width: 616px) {	
 	.circle-content h1 {
-		font-size: 1.5em;
+		font-size: 2.6em;
+	}
+	
+	.circle:after {
+		padding-bottom: 76%;
+		width: 76%;
 	}
 }
 
 @media screen and (min-width: 656px) {	
 	.circle-content h1 {
-		font-size: 1.6em;
+		font-size: 2.8em;
+	}
+	
+	.circle:after {
+		padding-bottom: 64%;
+		width: 64%;
 	}
 }
 
 @media screen and (min-width: 674px) {	
 	.circle-content h1 {
-		font-size: 1.7em;
+		font-size: 2.9em;
+	}
+	
+	.circle:after {
+		padding-bottom: 72%;
+		width: 72%;
 	}
 }
 
 @media screen and (min-width: 716px) {	
 	.circle-content h1 {
-		font-size: 1.8em;
+		font-size: 3em;
+	}
+	
+	.circle:after {
+		padding-bottom: 58%;
+		width: 58%;
 	}
 }
 
 @media screen and (min-width: 781px) {	
 	.circle-content h1 {
-		font-size: 2em;
+		font-size: 3.3em;
+	}
+	
+	.circle:after {
+		padding-bottom: 62%;
+		width: 62%;
 	}
 }
 
 @media screen and (min-width: 815px) {	
 	.circle-content h1 {
-		font-size: 2.1em;
+		font-size: 3.5em;
+	}
+	
+	.circle:after {
+		padding-bottom: 60%;
+		width: 60%;
 	}
 }
 
 @media screen and (min-width: 874px) {	
 	.circle-content h1 {
-		font-size: 2.3em;
+		font-size: 3.7em;
+	}
+	
+	.circle:after {
+		padding-bottom: 58%;
+		width: 58%;
 	}
 }
 
 @media screen and (min-width: 935px) {	
 	.circle-content h1 {
-		font-size: 2.5em;
+		font-size: 3.9em;
+	}
+	
+	.circle:after {
+		padding-bottom: 56%;
+		width: 56%;
 	}
 }
 
 @media screen and (min-width: 1003px) {
 	.circle-content h1 {
-		font-size: 2.7em;
+		font-size: 4.15em;
+	}
+	
+	.circle:after {
+		padding-bottom: 54%;
+		width: 54%;
 	}
 }
 
-@media screen and (min-width: 1057px) {
+@media screen and (min-width: 1051px) {
 	.circle-content h1 {
-		font-size: 2.9em;
+		font-size: 4.33em;
+	}
+	
+	.circle:after {
+		padding-bottom: 52%;
+		width: 52%;
 	}
 }
 
-@media screen and (min-width: 1130px) {
+@media screen and (min-width: 1101px) {
 	.circle-content h1 {
-		font-size: 3.1em;
+		font-size: 4.5em;
+	}
+	
+	.circle:after {
+		padding-bottom: 50%;
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1134px) {
+	.circle-content h1 {
+		font-size: 4.7em;
+	}
+	
+	.circle:after {
+		padding-bottom: 48%;
+		width: 48%;
+	}
+}
+
+@media screen and (min-width: 1213px) {
+	.circle-content h1 {
+		font-size: 4.6em;
+	}
+	
+	.circle:after {
+		padding-bottom: 46%;
+		width: 46%;
 	}
 }
 
 @media screen and (min-width: 1234px) {
 	.circle-content h1 {
-		font-size: 3.4em;
+		font-size: 4.6em;
+	}
+	
+	.circle:after {
+		padding-bottom: 44%;
+		width: 44%;
 	}
 }
+
+@media screen and (min-width: 1366px) {
+	.circle-content h1 {
+		font-size: 5.5em;
+	}
+	
+	.circle:after {
+		padding-bottom: 48%;
+		width: 48%;
+	}
+}
+	
+@media screen and (min-width: 1920px) {
+	.circle-content h1 {
+		font-size: 8em;
+	}	
+	
+	.circle:after {
+		padding-bottom: 50%;
+		width: 50%;
+	}
+}
+
+/* get that damn circle looking centered on different screen orientations */
+
+@media all and (orientation: landscape) {
+	.circle {
+		top: 8%; /* moves circle down */
+	}
+}
+
+@media all and (orientation: portrait) {
+	.circle {
+		top: 20%; /* moves circle down EVEN MORE! */
+	}
+}
+
+/* resize interior circle margins for text on larger displays (portrait OR landscape */
+@media screen and (min-width: 515px) and (max-width: 1920px) {
+	.circle-container {
+		width: 40%;
+	}
+}
+
 html {
 	box-sizing: border-box;
+	font-size: 100%;
 }
 
 body {
@@ -195,13 +352,14 @@ body {
 html, body {
 	height: 100%;
 	width: 100%;
+	min-height: 30em;
 	
 	font-family: "Helvetica Neue", "Arial", sans-serif;
 	
 	overflow-x: hidden;
 }
 
-header, div, h1, h2, h3, h4 {
+header, div, button, h1, h2, h3, h4 {
 	margin: 0;
 	padding: 0;
 }
@@ -220,9 +378,21 @@ h3 {
 	
 }
 
-p {
+p, .default-content-font {
 	font-family: "Cairo", "Helvetica Neue", sans-serif;
 	font-weight: 300;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: maroon;
+}
+
+a:hover {
+	color: red;
 }
 
 p, figcaption {
@@ -247,16 +417,17 @@ section {
 	height: auto;
 	
 	padding: 10px;
-	
+		
 	z-index: 5;
+	
 }
 
 section:nth-of-type(odd) {
-	background: rgba(248,248,248,0.9);
+	background: rgba(248,248,248,1);
 }
 
 section:nth-of-type(even) {
-	background: rgba(232,232,232,0.9);
+	background: rgba(248,248,248,1);
 }
 
 section h2 {
@@ -269,22 +440,44 @@ section h2 {
 	font-size: 2em;
 	color: midnightblue;
 	
-	padding: 15px 0 15px 37px;
+	padding: 14.5px 0 15px 37px;
 	
 	background: inherit;
+	z-index: 5;
 }
 
 section h3 {
 	padding: 0 5px;
 }
 
-.flexbox {
-	display: flex;
+
+
+.flexbox, .flexcolumn {
+	position: relative;
+	z-index: 1;
 	
+	display: flex;
+		
 	align-items: baseline;
 	justify-content: center;
 	
 	padding: 30px 35px;
+}
+
+.flexcolumn {
+	flex-flow: column wrap;
+}
+
+.flex-column-content {
+	width: 100%;
+	text-align: left;
+	flex-grow: 2;
+	flex-shrink: 2;
+	
+	flex-basis: auto;
+	
+	padding: 5px 5px;
+	background: inherit;
 }
 
 .flex-content {
@@ -307,19 +500,20 @@ section h3 {
 						  so that no content overlaps the nav-toggle */
 	position: relative;
 	/* left: 60px; */
+	min-height: 100%;
+	
 	margin: 0 auto;
 	top: 0;
 	left: 0px;
 	
 	width: 100%;
-
 }
 
 .circle-content {
 	display: table-cell;
 	padding: 1em;
 	
-	vertical align: center;
+	vertical-align: center;
 
 }
 
@@ -337,18 +531,16 @@ section h3 {
 	background-color: transparent;
 	text-align: center;
 	
-	top: 12%;
+	display: none;
 }
 
 .circle:after {
 	display: block;
-	padding-bottom: 40%;
-	width: 40%;
+	
 	height: 0;
 	border-radius: 50%;
 	
-	background: rgba(0,0,0,0.6);
-	border: 1px solid rgba(232,232,232,0.7);
+	background: rgba(0,0,0,0.4);
 	content: "";
 	
 	margin: 0 auto;
@@ -356,8 +548,8 @@ section h3 {
 
 .circle-inner {
 	position: absolute;
-
 	top: 18%;
+	
 	bottom: 0;
 	left: 0;
 	
@@ -369,7 +561,6 @@ section h3 {
 	margin: 0 auto;
 	display: table;
 	
-	width: 25%;
 	height: 50%;
 }
 
@@ -383,7 +574,7 @@ section h3 {
 	top: 0;
 	left: 0;
 	
-	background-image: url("../img/splash.jpg");
+	background-image: url("../img/interface/splash.jpg");
 	background-size: cover;
 	
 	/*background-attachment moved to media queries to fix iOS safari fixed/cover bug */
@@ -392,11 +583,69 @@ section h3 {
 	background-repeat: no-repeat;
 	
 	border-bottom: 1px solid rgba(208,208,208,1);
+	
 }
 
 .flexbox p {
 	margin: 10px 5px;
 	text-align: left;
+}
+
+.standard-element-spacing {	
+	margin: 0 2% 1% 0;
+}
+
+.footer--style {
+	position: absolute;
+	
+	bottom: -5em;
+	left: 0;
+	width: 100%;
+	height: auto;
+	
+	padding: 5% 2% 2% 2%;
+	background-color: powderblue;
+	color: black;
+	
+	text-align: center;
+	
+	z-index: 5;
+	
+}
+
+.footer--style h3 {
+	text-align: center;
+}
+
+.footer--style ul {
+	list-style: none;
+	text-indent: none;
+	padding: 20px 0 0 0;
+	margin: 0;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.footer--style li {
+	
+}
+
+.footer--style li a:hover {
+	opacity: 0.6;
+}
+
+.footer--style li a:visited, .footer--style li a:link {
+	color: black;
+}
+
+.footer-section, .footer-section h2 {
+	color: transparent;
+	background-color: inherit;
+}
+
+#copyright {
+	font-size: smaller;
+	text-align: center;
 }
 
 /* yes, a hack to make all the svgs display at approximately the same size. */
@@ -444,16 +693,67 @@ section h3 {
 	height: 150px;
 }
 
-#downarrow {
-	position: absolute;
+.small-img {
+	position: relative;
 	display: block;
 	
-	width: 50px;
-	height: 50px;
-	opacity: 0.8;
+	max-width: 100%;
 	
-	bottom: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.medium-box {
+	position: relative;
+	float: right;
+	width: 30%;
+	height: 500px;
+	margin: 3% auto;
+}
+
+@keyframes bounce {
+	0%, 100% {
+		bottom: 3.5em;
+		/* background-color: rgba(63, 174, 191, 0.8); */
+	}
+	
+	50% {
+		bottom: 3em;
+		/*background-color: rgba(63,191,63,0.2) */
+	}
+}
+
+object, iframe {
+	border: none;
+	width: 90%;
+	height: 500px;
+	
+	margin: 2%;
+}
+
+#scroll-indicator.idle-user {
+	animation: bounce 1s 10;
+	animation-timing-function: ease-in-out;
+}
+
+#scroll-indicator {
+	display: block;
+	position: absolute;
+	
+	/* background-color: rgba(63,191,63,0.8);
+	border-radius: 50%;
+	border: 3px solid white; */
+	
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	
 	left: 0;
+	right: 0;
+	margin: auto;
+		
+	bottom: 3.5em;
+	
 	
 	z-index: 10;
 }
