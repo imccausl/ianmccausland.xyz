@@ -1,0 +1,18 @@
+.animation-element {
+	opacity: 0;
+	position: relative;
+	z-index: 1;
+}
+
+.animation-element.animate-content {
+	opacity: 0;
+    -moz-transition: opacity 700ms ease-in;
+  -webkit-transition: opacity 700ms ease-in;
+  -o-transition: opacity 700ms ease-in;
+  transition: opacity 700ms ease-in;
+    }
+
+.animation-element.animate-content.in-view {
+	
+  opacity: 1;
+  }

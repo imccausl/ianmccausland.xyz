@@ -4,7 +4,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Ian McCausland is..?</title>
-		
+		<meta name="description" content="The online portfolio of Ian McCausland" />
+		<meta name="author" content="Ian McCausland" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
 		<link href="https://fonts.googleapis.com/css?family=Cairo:200,300,600" rel="stylesheet">
@@ -12,10 +13,12 @@
 		<link rel="stylesheet" href="css/fonts.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/nav.css" />
+		<link rel="stylesheet" href="css/animate_content.css" />
+		<link rel="stylesheet" href="css/popup-interfaces.css" />
 		
 		<script src="js/jquery/jquery-3.0.0.min.js"></script>
 		<script src="js/jquery/plugins/jquery.scrollTo.min.js"></script>
-		<script src="js/lib/jquery.inview.min.js.html"></script>
+		<script src="js/lib/pdfobject.min.js"></script>
 		
 		<script src="js/page-elements-display-controller.js"></script>
 		
@@ -65,7 +68,7 @@
 				<section id="skills" class="box-style">
 					<h2>Skills</h2>
 					
-					<div class="flexbox">
+					<div class="flexbox animation-element animate-content">
 						
 							<figure class="flex-content">
 								<img class = "html-logo" src="img/skills/html5.svg" />
@@ -88,13 +91,11 @@
 								<h3>Summary</h3>
 								<p>I've been interested in developing for the web since before even tables were used to lay out content. When <strike>frames</strike> blink <strike>were</strike> was cool, I was guilty of overusing <strike>them</strike> it. I even made the odd web interface in a popup window. But don't hold that against me. It was how things were done in 2000.</p>
 
-<p>Today, I'm obsessed with <strong>CSS3</strong>, <strong>HTML5</strong>, <strong>JavaScript</strong>, and the various awesome JavaScript frameworks that turn the web pages of old into fully responsive web <em>applications</em>.</p> 
+<p>Today, I'm obsessed with <strong>CSS3</strong>, <strong>HTML5</strong>, <strong>JavaScript</strong>, and the various awesome JavaScript frameworks that turn the web pages of old into fully responsive web <em>applications</em>. On this site, I use a mix of JavaScript and jQuery for DOM manipulation, not only because jQuery makes working with the DOM <em>so. much. faster.</em>, but it also provides built-in cross-browser compatibility. jQuery rocks.</p> 
 
-<p>I understand <strong>Ajax</strong>, <strong>JSON</strong>, <strong>XML</strong> and, and, well, speaking of asynchronous  I am currently learning <strong>Angular</strong>. I know that a <strong>MEAN</strong> stack isn't a large and inexplicable pile of bullies, that <strong>REST</strong>ful APIs aren't an excuse for sleeping on the job, and that these ridiculous jokes are probably not going to get me anywhere (but I'm crossing my fingers anyway). I am highly motivated and serious about professional development. I learn fast and find it exciting to explore new frameworks and languages. I keep up not only with best practices and the nuances of writing scalable and modular code, but I am also interested in the key theoretical aspects of development, such as programming methodology, problem solving, and information architecture. In other words, I may not <em>have</em> a computer science degree, but I use my education and experience to learn to <em>think</em> like a computer scientist. In this context, you might be interested in <a href="#story">how my research and education as a graduate student informed my entry into web development</a>.</p>
+<p>I understand <strong>Ajax</strong>, <strong>JSON</strong>, <strong>XML</strong> and, and, well, speaking of asynchronous  I am currently learning <strong>Angular</strong>. I know that a <strong>MEAN</strong> stack isn't a large and inexplicable pile of bullies, that <strong>REST</strong>ful APIs aren't an excuse for sleeping on the job, and that these ridiculous jokes are probably not going to get me anywhere (but I'm crossing my fingers anyway). I am highly motivated and serious about professional development. I learn fast and find it exciting to explore new frameworks and languages. I keep up not only with best practices and the nuances of writing scalable and modular code, but I am also interested in the key theoretical aspects of development, such as programming methodology, problem solving, and information architecture. In other words, I may not <em>have</em> a computer science degree, but I use my education and experience to learn to <em>think</em> like a computer scientist. As a former graduate student, I am a professional learner, which means that I am not only passionate about keeping up with changes in the web development industry, but I have the skills to never stop learning. In this context, you might be interested in <a href="#story">how my research and education as a graduate student informed my entry into web development</a>.</p>
 
 <p>I can work with SASS and LESS and have been comfortable with the unix command line since MacOS X Developer Preview 1 (I like my Terminal.app to have a transparent background, in case you're wondering... um, but I've also been using a Mac for a real long time).</p>
-
-<p>Oh did I also mention that I am learning unit testing with karma and end-to-end testing with protractor? I guess I didn't. But make no mistake: <em>I may not have 3,4,5+ years of web development experience under my belt just yet, but I'm serious about learning and implementing the technologies at its core.</em></p>
 
 <p>I'm in love with Coda 2 and BBEdit, on good terms with (if not totally enthusiastic about) NetBeans, and interested in one day finding a web development IDE I simply can't live without.</p>
 							</div>
@@ -105,7 +106,7 @@
 				<section id="edu" class="box-style">
 					<h2>Education</h2>
 						
-						<div class="flexbox">
+						<div class="flexbox animation-element animate-content">
 							
 							<figure class="flex-content">
 								<img class="edu-logo" src="img/education/uofc.png" />
@@ -129,7 +130,7 @@
 				
 				<section id="story" class="box-style">
 					<h2>Story</h2>
-					<div class="flexbox">
+					<div class="flexbox animation-element animate-content">
 						<p>In my past life I was a Ph.D. student in the Humanities Department at York University. I led a weekly tutorial for six years, introducing students to traditional and popular culture, for a course, aptly, if not stoically, named, Introduction to Traditional and Popular Culture. We looked at ways in which groups of human beings — i.e. cultures — understood themselves and their surroundings through shared narrative practices. That is my more general term for this fundamental fact about human beings: they tell stories. Whereas today we might binge-watch some Netflix, historically a group might gather around the storyteller, then later buy a newspaper or attend the theatre, and still later gather around the radio in the living-room. You get the idea. But the point is, this ineluctable human impulse to make meaning doesn’t begin and end with storytelling as it might be popularly concieved.</p>
 						<p>As a matter of fact, I bet you have a certain idea in your head right now about what storytelling entails: it’s probably fictional, it’s probably designed primarily for entertainment, and you probably don’t take it very seriously.</p>
 						<p>But what if I told you that I used this (admittedly) cumbersome phrase, <strong>shared narrative practices</strong> because this idea extends far beyond <strong>storytelling</strong> as we might spontaneously understand it? Quantum theory is a <strong>shared narrative practice.</strong> Cognitive science? That’s a <strong>shared narrative practice</strong>, too.  API documentation for iOS 10? You get the idea.</p>
@@ -139,25 +140,79 @@
 				
 				<section id="portfolio" class="box-style">
 					<h2>Portfolio</h2>
-					<h3>Web</h3>
-					<figure>
-						<img src="img/portfolio/modernmythologies.png" alt="screenshot of my project, modernmythologies.net site design" />
-						<figcaption>
-							<p><strong>Modern Mythologies</strong>
-							(<a href="http://www.modernmythologies.net">http://www.modernmythologies.net</a>)</p>
-							<p>After years of using a tumblr theme that I hacked together with limited CSS knowledge and (as a result) an and extreme dose of trial-and-error, I finally launched a redesign of my personal blog entirely on my own terms. It is fully responsive with a primary focus on readability. I used a very limited colour pallette because I was especially taken with the crispness of white-on-black for a layout that emphasizes textuality, although the dark blues of the pull-quotes and reds of the links add a minimal element of colour — making it easy for the reader to know when there are links embedded in the text, or, in the case of the pull-quotes, emphasizing the important takeaways from what are usually long-form articles — while still keeping with the primary focus of a text layout that harkens back to simplicity and crispness of newsprint.</p>
-						</figcaption>
-
+					
+					<div id = "popup-window" class="popup-background"></div>
+					
+						<div class="flexcolumn">
+						<h3>Web</h3>
+												
+						<figure class="flex-column-content animation-element animate-content">
+							<button class="toggle-img-popup"><img class="small-img" src="img/portfolio/modernmythologies.png" alt="screenshot of my project, modernmythologies.net site design" /></button>
+							<figcaption class="standard-element-spacing">
+							
+								<p><strong>Modern Mythologies</strong>
+									(<a href="http://www.modernmythologies.net">www.modernmythologies.net</a>)</p>
+									<p>After years of using a Tumblr theme that I hacked together with limited CSS knowledge and (as a result) an and extreme dose of trial-and-error, I finally launched a redesign of my personal blog entirely on my own terms. It is fully responsive with a primary focus on readability. I used a very limited colour palette because I was especially taken with the crispness of white-on-black for a layout that emphasizes textuality, although the dark blues of the pull-quotes and reds of the links add a minimal element of colour — making it easy for the reader to know when there are links embedded in the text, or, in the case of the pull-quotes, emphasizing the important takeaways from what are usually long-form articles — while still keeping with the primary focus of a text layout that harkens back to simplicity and crispness of newsprint. So I sifted through the Tumblr API for creating themes, and got to work.</p>
+									</figcaption>
+						</figure>
+						<figure class="flex-column-content animation-element animate-content">
+						<button class="toggle-img-popup"><img class="small-img" src="img/portfolio/ianmccausland.png" alt="screenshot of my project, ianmccausland.xyz personal website design" /></button>
+						
+						<figcaption class="standard-element-spacing">
+						
+						<p><strong>This Website!</strong>
+							(<a href="#">www.ianmccausland.xyz</a>)</p>
+							<p>A screenshot of the website within the website? So meta! But I added it here because I wanted to tell you about the thinking that went into its design. It seemed like the most appropriate place, since I also happened to code it and design it entirely by hand using CSS, HTML5, JavaScript and jQuery. In addition to being my personal website, it is a legitimate contribution to my portfolio demonstrating the kinds of things I can do with CSS3, HTML and JS.</p>
+							<p>I conceived of this site in the form of an online resume, and with that in mind as its primary aim, I decided to make it one long scrolling page so the user doesn't have to follow links this way and that to new pages and go back, etc. The primary interaction method is just to keep scrolling. Sticky positioned headers will stay at the top, so users don't lose track of where they are in the page. Otherwise, if the user is looking for something more specific, there is the trusty hamburger menu in the top left corner, ready to open and reveal a table of contents and allowing users to jump to any section they so desire.</p>
+							<p>Speaking of the hamburger menu, I decided to go with a minimalist approach to navigation and use a fixed hamburger instead of the more common responsive site navigation banner because, in the first place, scrolling is the primary interaction method for this site, not menus; and secondly, the hamburger does wonders for the site's responsiveness. No matter the screen size, it's always in the same place, and users of phones, tablets or desktops get a similar experience. Content remains at the foreground. Instead of having the menu fold out and remain on the page, the hamburger is always there no matter the size of your viewport, keeping the content front-and-centre.</p>						
+							</figcaption>
+						</figure>
+							</div>
+					
+					<div class="flexcolumn">	
 					<h3>Writing</h3>
+					<div class="flex-column-content animation-element animate-content">
+					<p>You'll find most of my recent writing on <a href="http://www.modernmythologies.net">my blog</a>. I write about technology, usually focusing on Apple hardware and software. I read <em>a lot</em> of technology blogs. There are a lot of great ones out there (<a href="http://www.daringfireball.net">Daring Fireball</a>, <a href="http://www.imore.com">iMore</a>, to name a few) but there is also a lot of terrible writing and thinking going on out there. I felt that there needed to be another level-headed voice out there commenting on Apple and technology. So I made one. I use my analytic skills and interest in the hermeneutics and deep analysis from my <a href="#education">Masters in Cultural Theory</a> and apply it to User Interface and User Interaction issues, and how software and hardware create meaningful relationships to (technological) objects, etc.</p>
+					<p><a href="http://www.modernmythologies.net">Have a look at my blog to get a concrete sense of my writing skills</a>.</p>
+					</div>
+					</div>
+					
+					<div class="flexcolumn">
 					<h3>Research</h3>
+					<div class="flex-column-content animation-element animate-content">
+					<div class="standard-element-spacing">
+					<p><strong><q>Stasis Interrupted</q>: Christianity and Subjectivity in David Fincher's <em>Alien<sup>3</sup></em></strong></p>
+						<p>Published by <a href="http://www.abc-clio">Praeger</a> in 2015 as <a href="http://www.abc-clio.com/ABC-CLIOSolutions/product.aspx?pc=A3808C">part of a larger volume of articles examining christianity in popular culture</a>, this article was the culmination of a lengthy research project examining representations of christianity in cinema. I chose to use <em>Alien<sup>3</sup></em> as a way of examining the meaning of Christianity in a modern context because of the way that the film merges religion (the 'born-again' colony of Prisoners that populate Fury 161) and redemption in a technologically advanced, post-industrial sci-fi universe. I was also interested in why the film -- despite being totally underrated -- stands as one of the most despised of the <em>Alien</em> series. The themes of Christianity and redemption in fact build upon and extend the previous two films in the series and, as a result, contribute excellently to a cohesive logic established with the first film. We move from diegetic universe in which belief in God has been fully evacuated due to the advancement of technology and science (the first <em>Alien</em> film) to one in which we are confronted with an attempt (by both Ripley and the colony of Prisoners) to reclaim faith in a world in which hope has been violently wrenched from it. If you'd like to see more about how I wrote up this research project from an expansive set of research materials, you can download or view a pdf version of the chapter (in browsers supporting inline viewing, it will be visible below; otherwise, follow <a href="/pdf/stasisinterrupted.pdf">the download link</a>).</p></div>
+						<object data="/pdf/stasisinterrupted.pdf" type="application/pdf"><iframe src="/pdf/stasisinterrupted.pdf"></iframe></object>	
+				</div>
+					
+						</div>
 				</section>
 				
 				<section id="cv" class="box-style">
 					<h2>Curriculum Vitae</h2>
+					<div class="flexbox">
+					<div class="flex-column-content">
+						<object data="/pdf/McCausland_resume.pdf" type="application/pdf"><iframe src="/pdf/McCausland_resume.pdf">If you aren't seeing the in-line PDF displayed, go ahead and <a href="/pdf/McCausland_resume.pdf">download</a> a PDF copy of my resume: <a href="/pdf/McCausland_resume.pdf">Download PDF</a></iframe></object>
+					</div>
+					</div>
 				</section>
-				
+									<h2>Footer</h2>
+				<footer class="footer--style">
+					<ul class="default-content-font">
+						<li><a href="http://www.modernmythologies.net" target="_blank">Blog</a></li>
+						<li><a href="pdf/McCausland_resume.pdf" target="_blank">Download CV</a></li>
+						<li><a href="mailto:imccausl@icloud.com">Contact</a></li>
+						<li><a href="#top">Back to top</a></li>
+					</ul>
+					<p id="copyright">© 2016 Ian McCausland</p>
+				</footer>
+			
 			</div>
+		
 		</div>
+		
+
 		
 		<script type="text/javascript" src="js/nav-controller.js"></script>
 		<script type="text/javascript" src="js/jquery.scroll-controller.js"></script>

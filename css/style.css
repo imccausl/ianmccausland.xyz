@@ -378,7 +378,7 @@ h3 {
 	
 }
 
-p {
+p, .default-content-font {
 	font-family: "Cairo", "Helvetica Neue", sans-serif;
 	font-weight: 300;
 }
@@ -417,8 +417,9 @@ section {
 	height: auto;
 	
 	padding: 10px;
-	
+		
 	z-index: 5;
+	
 }
 
 section:nth-of-type(odd) {
@@ -442,6 +443,7 @@ section h2 {
 	padding: 14.5px 0 15px 37px;
 	
 	background: inherit;
+	z-index: 5;
 }
 
 section h3 {
@@ -450,13 +452,32 @@ section h3 {
 
 
 
-.flexbox {
+.flexbox, .flexcolumn {
+	position: relative;
+	z-index: 1;
+	
 	display: flex;
 		
 	align-items: baseline;
 	justify-content: center;
 	
 	padding: 30px 35px;
+}
+
+.flexcolumn {
+	flex-flow: column wrap;
+}
+
+.flex-column-content {
+	width: 100%;
+	text-align: left;
+	flex-grow: 2;
+	flex-shrink: 2;
+	
+	flex-basis: auto;
+	
+	padding: 5px 5px;
+	background: inherit;
 }
 
 .flex-content {
@@ -479,12 +500,13 @@ section h3 {
 						  so that no content overlaps the nav-toggle */
 	position: relative;
 	/* left: 60px; */
+	min-height: 100%;
+	
 	margin: 0 auto;
 	top: 0;
 	left: 0px;
 	
 	width: 100%;
-
 }
 
 .circle-content {
@@ -569,6 +591,63 @@ section h3 {
 	text-align: left;
 }
 
+.standard-element-spacing {	
+	margin: 0 2% 1% 0;
+}
+
+.footer--style {
+	position: absolute;
+	
+	bottom: -5em;
+	left: 0;
+	width: 100%;
+	height: auto;
+	
+	padding: 5% 2% 2% 2%;
+	background-color: powderblue;
+	color: black;
+	
+	text-align: center;
+	
+	z-index: 5;
+	
+}
+
+.footer--style h3 {
+	text-align: center;
+}
+
+.footer--style ul {
+	list-style: none;
+	text-indent: none;
+	padding: 20px 0 0 0;
+	margin: 0;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.footer--style li {
+	
+}
+
+.footer--style li a:hover {
+	opacity: 0.6;
+}
+
+.footer--style li a:visited, .footer--style li a:link {
+	color: black;
+}
+
+.footer-section, .footer-section h2 {
+	color: transparent;
+	background-color: inherit;
+}
+
+#copyright {
+	font-size: smaller;
+	text-align: center;
+}
+
 /* yes, a hack to make all the svgs display at approximately the same size. */
 
 .css-logo {
@@ -614,6 +693,24 @@ section h3 {
 	height: 150px;
 }
 
+.small-img {
+	position: relative;
+	display: block;
+	
+	max-width: 100%;
+	
+	margin: 0;
+	padding: 0;
+}
+
+.medium-box {
+	position: relative;
+	float: right;
+	width: 30%;
+	height: 500px;
+	margin: 3% auto;
+}
+
 @keyframes bounce {
 	0%, 100% {
 		bottom: 3.5em;
@@ -624,6 +721,14 @@ section h3 {
 		bottom: 3em;
 		/*background-color: rgba(63,191,63,0.2) */
 	}
+}
+
+object, iframe {
+	border: none;
+	width: 90%;
+	height: 500px;
+	
+	margin: 2%;
 }
 
 #scroll-indicator.idle-user {

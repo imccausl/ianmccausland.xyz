@@ -2,10 +2,8 @@
 $(document).ready(function(){
         
             /** 
-     * This part does the "fixed navigation after scroll" functionality
-     * We use the jQuery function scroll() to recalculate our variables as the 
-     * page is scrolled/
-     */
+     * change the colour of the hamburger menu depending on the background color */
+     
     $('.site-wrap').scroll(function(){
         var window_top = $(window).scrollTop() + 12; // the "12" should equal the margin-top value for nav.stick
         var div_top = $('#nav-anchor').offset().top;
@@ -16,15 +14,6 @@ $(document).ready(function(){
             }
     });
     
-        /**
-         * This part causes smooth scrolling using scrollto.js
-         * We target all a tags inside the nav, and apply the scrollto.js to it.
-         */
-        $('.nav a').click(function(evn){
-            evn.preventDefault();
-            $('.site-wrap').scrollTo(this.hash, this.hash); 
-        });
-        
         /**
          * This part handles the highlighting functionality.
          * We use the scroll functionality again, some array creation and 
