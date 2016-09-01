@@ -1,8 +1,15 @@
 
+<<<<<<< HEAD
 .vscode/ftp-sync.json
 
 .DS_Store
 
+=======
+.DS_Store
+
+.vscode/ftp-sync.json
+
+>>>>>>> master
 img/form/comment.svg
 
 img/form/email.svg
