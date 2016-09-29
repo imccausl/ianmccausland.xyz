@@ -1,341 +1,3 @@
-@media screen and (min-width: 320px) and (max-width: 375px) {
-	.flexbox {
-		flex-flow: column wrap;
-	}
-	
-	.flex-content {
-		width: 100%;
-	}
-	
-	#top {
-		
-		background-attachment: scroll;
-	}
-}
-
-@media screen and (min-width: 736px) and (max-width: 850px) {
-	.flexbox {
-		flex-flow: column wrap;
-	}
-	
-	.flex-content {
-		width: 100%;
-	}
-	
-	#top {
-		
-		background-attachment: scroll;
-	}
-}
-
-@media screen and (min-width: 375px) and (max-width: 415px) {
-	.flexbox {
-		flex-flow: column wrap;
-	}
-	
-	.flex-content {
-		width: 90%;
-	}
-	
-	#top {
-		
-		background-attachment: scroll;
-	}
-}
-
-@media screen and (min-width: 415px) and (max-width:736px) {
-	.flexbox {
-		flex-flow: column wrap;
-	}
-	
-	.flex-content {
-		width: 90%;
-	}
-	
-	#top {
-		
-		background-attachment: scroll;
-	}
-}
-
-/* stupid iOS safari background:cover/background-attachment bug -- this doesn't even solve the issue. 
-   Yay. */
-
-@media screen and (min-width:850px) and handheld and (orientation: landscape) {
-	#top {
-		
-		background-attachment: scroll;
-	}
-}
-
-@media screen and (min-width: 850px) {
-	.flexbox {
-		flex-flow: row wrap;
-	}
-	
-	.flex-content {
-		width: 18vw;
-	}
-	
-	#top {
-		
-		background-attachment: fixed;
-	}
-}
-
-/* ALL THE MEDIA QUERIES!
- * Yes, responsive font/circle resizing and positioning for header 
- * A truly glorious, tedious, pain-in-the-ass. 
- * If anyone has better ideas about how to do this with less code, 
- * Please contact me! 
- ******************************************************************/
- 
-@media screen and (min-width: 1px) {	
-	.circle-content h1 {
-		font-size: 2.5em;
-	}
-	
-	.circle:after {
-		padding-bottom: 86%;
-		width: 86%;
-	}
-	
-	.circle-container {
-		width: 80%; /* 	fix the super tiny margins for the text inside the circle on tiny displays like 						iPhone 4... for that 1 person that still uses an iPhone 4? Meh, it also affects
-						the text on iPhone 5-6s Plus so all is not lost. */
-	}
-}
-
-@media screen and (min-width: 515px) {	
-	.circle-content h1 {
-		font-size: 2.3em;
-	}
-	
-	.circle:after {
-		padding-bottom: 85%;
-		width: 85%;
-	}
-}
-
-@media screen and (min-width: 553px) {	
-	.circle-content h1 {
-		font-size: 2.3em;
-	}
-	
-	.circle:after {
-		padding-bottom: 76%;
-		width: 76%;
-	}
-}
-
-@media screen and (min-width: 576px) {	
-	.circle-content h1 {
-		font-size: 2.5em;
-	}
-	
-	.circle:after {
-		padding-bottom: 80%;
-		width: 80%;
-	}
-}
-
-@media screen and (min-width: 616px) {	
-	.circle-content h1 {
-		font-size: 2.6em;
-	}
-	
-	.circle:after {
-		padding-bottom: 76%;
-		width: 76%;
-	}
-}
-
-@media screen and (min-width: 656px) {	
-	.circle-content h1 {
-		font-size: 2.8em;
-	}
-	
-	.circle:after {
-		padding-bottom: 64%;
-		width: 64%;
-	}
-}
-
-@media screen and (min-width: 674px) {	
-	.circle-content h1 {
-		font-size: 2.9em;
-	}
-	
-	.circle:after {
-		padding-bottom: 72%;
-		width: 72%;
-	}
-}
-
-@media screen and (min-width: 716px) {	
-	.circle-content h1 {
-		font-size: 3em;
-	}
-	
-	.circle:after {
-		padding-bottom: 58%;
-		width: 58%;
-	}
-}
-
-@media screen and (min-width: 781px) {	
-	.circle-content h1 {
-		font-size: 3.3em;
-	}
-	
-	.circle:after {
-		padding-bottom: 62%;
-		width: 62%;
-	}
-}
-
-@media screen and (min-width: 815px) {	
-	.circle-content h1 {
-		font-size: 3.5em;
-	}
-	
-	.circle:after {
-		padding-bottom: 60%;
-		width: 60%;
-	}
-}
-
-@media screen and (min-width: 874px) {	
-	.circle-content h1 {
-		font-size: 3.7em;
-	}
-	
-	.circle:after {
-		padding-bottom: 58%;
-		width: 58%;
-	}
-}
-
-@media screen and (min-width: 935px) {	
-	.circle-content h1 {
-		font-size: 3.9em;
-	}
-	
-	.circle:after {
-		padding-bottom: 56%;
-		width: 56%;
-	}
-}
-
-@media screen and (min-width: 1003px) {
-	.circle-content h1 {
-		font-size: 4.15em;
-	}
-	
-	.circle:after {
-		padding-bottom: 54%;
-		width: 54%;
-	}
-}
-
-@media screen and (min-width: 1051px) {
-	.circle-content h1 {
-		font-size: 4.33em;
-	}
-	
-	.circle:after {
-		padding-bottom: 52%;
-		width: 52%;
-	}
-}
-
-@media screen and (min-width: 1101px) {
-	.circle-content h1 {
-		font-size: 4.5em;
-	}
-	
-	.circle:after {
-		padding-bottom: 50%;
-		width: 50%;
-	}
-}
-
-@media screen and (min-width: 1134px) {
-	.circle-content h1 {
-		font-size: 4.7em;
-	}
-	
-	.circle:after {
-		padding-bottom: 48%;
-		width: 48%;
-	}
-}
-
-@media screen and (min-width: 1213px) {
-	.circle-content h1 {
-		font-size: 4.6em;
-	}
-	
-	.circle:after {
-		padding-bottom: 46%;
-		width: 46%;
-	}
-}
-
-@media screen and (min-width: 1234px) {
-	.circle-content h1 {
-		font-size: 4.6em;
-	}
-	
-	.circle:after {
-		padding-bottom: 44%;
-		width: 44%;
-	}
-}
-
-@media screen and (min-width: 1366px) {
-	.circle-content h1 {
-		font-size: 5.5em;
-	}
-	
-	.circle:after {
-		padding-bottom: 48%;
-		width: 48%;
-	}
-}
-	
-@media screen and (min-width: 1920px) {
-	.circle-content h1 {
-		font-size: 8em;
-	}	
-	
-	.circle:after {
-		padding-bottom: 50%;
-		width: 50%;
-	}
-}
-
-/* get that damn circle looking centered on different screen orientations */
-
-@media all and (orientation: landscape) {
-	.circle {
-		top: 8%; /* moves circle down */
-	}
-}
-
-@media all and (orientation: portrait) {
-	.circle {
-		top: 20%; /* moves circle down EVEN MORE! */
-	}
-}
-
-/* resize interior circle margins for text on larger displays (portrait OR landscape */
-@media screen and (min-width: 515px) and (max-width: 1920px) {
-	.circle-container {
-		width: 40%;
-	}
-}
-
 html {
 	box-sizing: border-box;
 	font-size: 100%;
@@ -757,3 +419,462 @@ object, iframe {
 	
 	z-index: 10;
 }
+
+/* resume styles */
+
+@font-face {
+	font-family: 'CMUSerif';
+	src: url('../vendor/fonts/cmunrm.ttf');
+	src: url('../vendor/fonts/cmunrm.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'CMUSerifBold';
+	src: url('../vendor/fonts/cmunrb.ttf');
+	src: url('../vendor/fonts/cmunrb.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'CMUSerifItalic';
+	src: url('../vendor/fonts/cmunui.ttf');
+	src: url('../vendor/fonts/cmunui.ttf') format('truetype');
+}
+
+#resume {
+	font-family: "CMUSerif", Georgia, serif;
+	text-align: left;
+	padding-left: 5%;
+	padding-right: 5%;	
+}
+
+#resume section em {
+	font-family: CMUSerifItalic, Georgia, serif;
+	font-style: normal;
+}
+
+#resume section strong {
+	font-family: CMUSerifBold, Georgia, serif;
+	font-weight: normal;
+}
+
+#my-info h1, #my-info h2 {
+	text-align: center !important;
+	font-size: 1.2em;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+
+#my-info h1 {
+	font-size: 2em !important;
+	font-weight: bold;
+}
+
+#resume {
+	line-height: 1;
+	font-size: 1.2em;
+}
+
+#resume h3, #resume h4 {
+	font-size: 1.2em;
+
+	font-family: CMUSerifBold, Georgia, serif;
+	text-align: left;
+}
+
+#resume section ul {
+	list-style-type: disc;
+	list-style-position: outside;
+	padding-left: 18px;
+}
+
+#resume section table, #resume section tr, #resume section th, #resume section td, #resume p {
+	border: none;
+	outline: none;
+	margin: 0;
+	line-height: 1.5;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+#resume-education table tr {
+	margin-top: 0;
+	
+}
+
+.resume-dates {
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	
+	width: 98%;
+	
+	text-indent: none;
+	text-decoration: none;
+}
+
+th a {
+	font-weight: normal;
+}
+
+#my-info {
+	padding-bottom: 50px !important;
+}
+
+#resume-publications, #resume-education, #technical-skills {
+	padding-bottom: 18px;
+}
+
+.exp-highlights ul, .pubs {
+	width: 88%;
+}
+
+.exp-highlights li {
+	margin:0;
+}
+
+.exp-highlights ul {
+	margin: 15px 0;
+}
+
+/* media queries */
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+	.flexbox {
+		flex-flow: column wrap;
+	}
+	
+	.flex-content {
+		width: 100%;
+	}
+	
+	#top {
+		
+		background-attachment: scroll;
+	}
+}
+
+@media screen and (min-width: 736px) and (max-width: 850px) {
+	.flexbox {
+		flex-flow: column wrap;
+	}
+	
+	.flex-content {
+		width: 100%;
+	}
+	
+	#top {
+		
+		background-attachment: scroll;
+	}
+}
+
+@media screen and (min-width: 375px) and (max-width: 415px) {
+	.flexbox {
+		flex-flow: column wrap;
+	}
+	
+	.flex-content {
+		width: 90%;
+	}
+	
+	#top {
+		
+		background-attachment: scroll;
+	}
+}
+
+@media screen and (min-width: 415px) and (max-width:736px) {
+	.flexbox {
+		flex-flow: column wrap;
+	}
+	
+	.flex-content {
+		width: 90%;
+	}
+	
+	#top {
+		
+		background-attachment: scroll;
+	}
+}
+
+/* stupid iOS safari background:cover/background-attachment bug -- this doesn't even solve the issue. 
+   Yay. */
+
+@media screen and (min-width:850px) and handheld and (orientation: landscape) {
+	#top {
+		
+		background-attachment: scroll;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	.flexbox {
+		flex-flow: row wrap;
+	}
+	
+	.flex-content {
+		width: 18vw;
+	}
+	
+	#top {
+		
+		background-attachment: fixed;
+	}
+}
+
+/* ALL THE MEDIA QUERIES!
+ * Yes, responsive font/circle resizing and positioning for header 
+ * A truly glorious, tedious, pain-in-the-ass. 
+ * If anyone has better ideas about how to do this with less code, 
+ * Please contact me! 
+ ******************************************************************/
+ 
+@media screen and (min-width: 1px) {	
+	.circle-content h1 {
+		font-size: 2.5em;
+	}
+	
+	.circle:after {
+		padding-bottom: 86%;
+		width: 86%;
+	}
+	
+	.circle-container {
+		width: 80%; /* 	fix the super tiny margins for the text inside the circle on tiny displays like 						iPhone 4... for that 1 person that still uses an iPhone 4? Meh, it also affects
+						the text on iPhone 5-6s Plus so all is not lost. */
+	}
+}
+
+@media screen and (min-width: 515px) {	
+	.circle-content h1 {
+		font-size: 2.3em;
+	}
+	
+	.circle:after {
+		padding-bottom: 85%;
+		width: 85%;
+	}
+}
+
+@media screen and (min-width: 553px) {	
+	.circle-content h1 {
+		font-size: 2.3em;
+	}
+	
+	.circle:after {
+		padding-bottom: 76%;
+		width: 76%;
+	}
+}
+
+@media screen and (min-width: 576px) {	
+	.circle-content h1 {
+		font-size: 2.5em;
+	}
+	
+	.circle:after {
+		padding-bottom: 80%;
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 616px) {	
+	.circle-content h1 {
+		font-size: 2.6em;
+	}
+	
+	.circle:after {
+		padding-bottom: 76%;
+		width: 76%;
+	}
+}
+
+@media screen and (min-width: 656px) {	
+	.circle-content h1 {
+		font-size: 2.8em;
+	}
+	
+	.circle:after {
+		padding-bottom: 64%;
+		width: 64%;
+	}
+}
+
+@media screen and (min-width: 674px) {	
+	.circle-content h1 {
+		font-size: 2.9em;
+	}
+	
+	.circle:after {
+		padding-bottom: 72%;
+		width: 72%;
+	}
+}
+
+@media screen and (min-width: 716px) {	
+	.circle-content h1 {
+		font-size: 3em;
+	}
+	
+	.circle:after {
+		padding-bottom: 58%;
+		width: 58%;
+	}
+}
+
+@media screen and (min-width: 781px) {	
+	.circle-content h1 {
+		font-size: 3.3em;
+	}
+	
+	.circle:after {
+		padding-bottom: 62%;
+		width: 62%;
+	}
+}
+
+@media screen and (min-width: 815px) {	
+	.circle-content h1 {
+		font-size: 3.5em;
+	}
+	
+	.circle:after {
+		padding-bottom: 60%;
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 874px) {	
+	.circle-content h1 {
+		font-size: 3.7em;
+	}
+	
+	.circle:after {
+		padding-bottom: 58%;
+		width: 58%;
+	}
+}
+
+@media screen and (min-width: 935px) {	
+	.circle-content h1 {
+		font-size: 3.9em;
+	}
+	
+	.circle:after {
+		padding-bottom: 56%;
+		width: 56%;
+	}
+}
+
+@media screen and (min-width: 1003px) {
+	.circle-content h1 {
+		font-size: 4.15em;
+	}
+	
+	.circle:after {
+		padding-bottom: 54%;
+		width: 54%;
+	}
+}
+
+@media screen and (min-width: 1051px) {
+	.circle-content h1 {
+		font-size: 4.33em;
+	}
+	
+	.circle:after {
+		padding-bottom: 52%;
+		width: 52%;
+	}
+}
+
+@media screen and (min-width: 1101px) {
+	.circle-content h1 {
+		font-size: 4.5em;
+	}
+	
+	.circle:after {
+		padding-bottom: 50%;
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1134px) {
+	.circle-content h1 {
+		font-size: 4.7em;
+	}
+	
+	.circle:after {
+		padding-bottom: 48%;
+		width: 48%;
+	}
+}
+
+@media screen and (min-width: 1213px) {
+	.circle-content h1 {
+		font-size: 4.6em;
+	}
+	
+	.circle:after {
+		padding-bottom: 46%;
+		width: 46%;
+	}
+}
+
+@media screen and (min-width: 1234px) {
+	.circle-content h1 {
+		font-size: 4.6em;
+	}
+	
+	.circle:after {
+		padding-bottom: 44%;
+		width: 44%;
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	.circle-content h1 {
+		font-size: 5.5em;
+	}
+	
+	.circle:after {
+		padding-bottom: 48%;
+		width: 48%;
+	}
+}
+	
+@media screen and (min-width: 1920px) {
+	.circle-content h1 {
+		font-size: 8em;
+	}	
+	
+	.circle:after {
+		padding-bottom: 50%;
+		width: 50%;
+	}
+}
+
+/* get that damn circle looking centered on different screen orientations */
+
+@media all and (orientation: landscape) {
+	.circle {
+		top: 8%; /* moves circle down */
+	}
+}
+
+@media all and (orientation: portrait) {
+	.circle {
+		top: 20%; /* moves circle down EVEN MORE! */
+	}
+}
+
+/* resize interior circle margins for text on larger displays (portrait OR landscape */
+@media screen and (min-width: 515px) and (max-width: 1920px) {
+	.circle-container {
+		width: 40%;
+	}
+}
+
+
