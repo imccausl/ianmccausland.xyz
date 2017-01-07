@@ -258,9 +258,9 @@ section h3 {
 }
 
 .footer--style {
-	position: absolute;
+	position: relative;
 	
-	bottom: -5em;
+	bottom: 0;
 	left: 0;
 	width: 100%;
 	height: auto;
@@ -440,7 +440,11 @@ object, iframe {
 	src: url('../vendor/fonts/cmunui.ttf') format('truetype');
 }
 
-#resume {
+.container {
+	position: relative;
+	width: 100%;
+}
+#resume, #my-info {
 	font-family: "CMUSerif", Georgia, serif;
 	text-align: left;
 	padding-left: 5%;
@@ -457,8 +461,8 @@ object, iframe {
 	font-weight: normal;
 }
 
-#my-info h1, #my-info h2 {
-	text-align: center !important;
+#my-info p, #my-info h1 {
+	text-align: center;
 	font-size: 1.2em;
 	line-height: 1;
 	margin: 0;
@@ -466,7 +470,7 @@ object, iframe {
 }
 
 #my-info h1 {
-	font-size: 2em !important;
+	font-size: 2em;
 	font-weight: bold;
 }
 
